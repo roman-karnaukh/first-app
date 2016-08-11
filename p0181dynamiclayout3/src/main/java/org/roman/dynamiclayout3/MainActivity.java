@@ -1,0 +1,71 @@
+package org.roman.dynamiclayout3;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.SeekBar;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener, View.OnClickListener {
+
+    SeekBar sbWeight;
+    Button btn1;
+    Button btn2;
+
+    LinearLayout.LayoutParams lParams1;
+    LinearLayout.LayoutParams lParams2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        sbWeight = (SeekBar) findViewById(R.id.sbWeight);
+
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn2 = (Button) findViewById(R.id.btn2);
+
+        lParams1 = (LinearLayout.LayoutParams) btn1.getLayoutParams();
+        lParams2 = (LinearLayout.LayoutParams) btn2.getLayoutParams();
+
+        sbWeight.setOnSeekBarChangeListener(this);
+        btn1.setOnClickListener(this);
+        btn2.setOnClickListener(this);
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        int leftParams = progress;
+        int rightParams = seekBar.getMax() - progress;
+
+        lParams1.weight = leftParams;
+        lParams2.weight = rightParams;
+
+        btn1.setText(String.valueOf(leftParams));
+        btn2.setText(String.valueOf(rightParams));
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn1:
+                Toast.makeText(this, btn1.getText(), Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn2:
+                Toast.makeText(this, btn2.getText(), Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+}
