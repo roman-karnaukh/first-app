@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/0111resvalues" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0041basicviews" />
@@ -16,11 +17,14 @@
             <option value="$PROJECT_DIR$/p0072layoutprop" />
             <option value="$PROJECT_DIR$/p0081viewbyid" />
             <option value="$PROJECT_DIR$/p0091onclickbuttons" />
+            <option value="$PROJECT_DIR$/p0101listener" />
+            <option value="$PROJECT_DIR$/p0102activitylistener" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/0111resvalues" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0041basicviews" />
@@ -29,6 +33,8 @@
             <option value="$PROJECT_DIR$/p0072layoutprop" />
             <option value="$PROJECT_DIR$/p0081viewbyid" />
             <option value="$PROJECT_DIR$/p0091onclickbuttons" />
+            <option value="$PROJECT_DIR$/p0101listener" />
+            <option value="$PROJECT_DIR$/p0102activitylistener" />
           </set>
         </option>
       </GradleProjectSettings>

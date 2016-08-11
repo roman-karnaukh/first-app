@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="horizontal">
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_height="match_parent"
@@ -32,5 +32,19 @@
             android:text="Cancel"
             android:layout_width="100dp">
         </Button>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStart"
+            android:text="start"
+            android:layout_gravity="center_horizontal">
+        </Button>
+
+        <AnalogClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analogClock"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </LinearLayout>
