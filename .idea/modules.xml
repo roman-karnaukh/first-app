@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/0111resvalues/0111resvalues.iml" filepath="$PROJECT_DIR$/0111resvalues/0111resvalues.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstTestApp.iml" filepath="$PROJECT_DIR$/FirstTestApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" filepath="$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" />
@@ -14,6 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/p0091onclickbuttons/p0091onclickbuttons.iml" filepath="$PROJECT_DIR$/p0091onclickbuttons/p0091onclickbuttons.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0101listener/p0101listener.iml" filepath="$PROJECT_DIR$/p0101listener/p0101listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0102activitylistener/p0102activitylistener.iml" filepath="$PROJECT_DIR$/p0102activitylistener/p0102activitylistener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0111resvalues/0111resvalues.iml" filepath="$PROJECT_DIR$/p0111resvalues/0111resvalues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0121logandmess/p0121logandmess.iml" filepath="$PROJECT_DIR$/p0121logandmess/p0121logandmess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0131menusimple/p0131menusimple.iml" filepath="$PROJECT_DIR$/p0131menusimple/p0131menusimple.iml" />
     </modules>
   </component>
 </project>
