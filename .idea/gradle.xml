@@ -36,6 +36,7 @@
             <option value="$PROJECT_DIR$/p0281intentextras" />
             <option value="$PROJECT_DIR$/p0291simpleactivityresult" />
             <option value="$PROJECT_DIR$/p0301activityresult" />
+            <option value="$PROJECT_DIR$/p0311simpleintents" />
           </set>
         </option>
         <option name="myModules">
@@ -69,6 +70,7 @@
             <option value="$PROJECT_DIR$/p0281intentextras" />
             <option value="$PROJECT_DIR$/p0291simpleactivityresult" />
             <option value="$PROJECT_DIR$/p0301activityresult" />
+            <option value="$PROJECT_DIR$/p0311simpleintents" />
           </set>
         </option>
       </GradleProjectSettings>
