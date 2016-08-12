@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -33,13 +34,26 @@ public class MainActivity extends AppCompatActivity {
                 , new ColorDrawable(Color.parseColor("#F2BCFB"))};
 
 
-        TransitionDrawable trans = new TransitionDrawable(color2);
+        final TransitionDrawable trans = new TransitionDrawable(color2);
         linearLayout.setBackgroundDrawable(trans);
-        trans.startTransition(10000);
+        trans.startTransition(2000);
 
         tv = (TextView) findViewById(R.id.tv);
         // регистрируем контекстное меню для компонента tv
         registerForContextMenu(tv);
+
+        LinearLayout.OnClickListener li = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case R.id.btRestart:
+                        trans.startTransition(2000);
+                }
+            }
+        };
+
+        Button btnRestart = (Button) findViewById(R.id.btRestart);
+        btnRestart.setOnClickListener(li);
     }
 
     @Override
